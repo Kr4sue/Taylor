@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dk-longreach" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="GUTS.css">
+    <title>Taylor Swift</title> <!-- IBAHIN YUNG NAME NITO DEPENDE DUN SA CONCERT NAME NUNG ARTIST --> 
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <header>
+        <div class="ConcertCraze">
+                <nav>
+                    <ul>
+                        <li><a href="ConcertCraze.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                    <img src="Images/Profile.jpg" class="user-pic" onclick="toggleMenu()">
+    
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="Images/Profile.jpg">
+                                <h3>Jaycee Recaña</h3>
+                            </div>
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Edit Profile</p>
+                                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Settings & Privacy</p>
+                                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Help & Support</p>
+                                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Log-Out</p>
+                                <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+    </header>
+
+     <!-- Main Content Sections -->
+     <section class="artist-banner">
+        <div class="slideshow-container">
+            <!-- Text Overlay -->
+            <div class="banner-text">
+                <h1>The Eras Tour</h1> <!-- IBAHIN NYO YUNG NAME DEPENDE DUN SA ARTIST -->
+                <p>Featuring Tylor Swift</p> <!-- NAME NUNG ARTIST -->
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="Image/taylor1.jpg" class="banner-image"> <!-- HANAP KAYO NG PICTURE TAS REPLACE NYO YUNG NAKALAGAY DTO -->
+            </div>
+            <div class="mySlides fade">
+                <img src="Image/taylor2.jpeg" class="banner-image"> <!-- SAME LNG DUN SA UNA -->
+            </div>
+            <div class="mySlides fade">
+                <img src="Image/taylor3.jpg" class="banner-image"> <!-- SAME LNG DUN SA UNA -->
+            </div>
+
+            <div class="dot-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- Main Content Sections -->
+    <section class="main-sections">
+        <!-- About the Event Section -->
+        <div class="about-event">
+            <h2>Get Ready for the Eras Tour!</h2> <!-- HANAP KAYO NG CONTENT ABOUT DUN SA CONCERT WAG MASYADONG MAHABA SAKTO LNG ( HEADER ITO ) -->
+            <p> Taylor Swift’s highly anticipated Eras Tour is redefining live music experiences, and now she’s ready to take fans on a journey through every chapter of her iconic career. Get ready to sing along to your favorites from Midnights like "Anti-Hero" and "Lavender Haze," alongside timeless hits from albums like 1989, Red, and Fearless, including "Blank Space," "All Too Well," and "Love Story." Each song is a piece of storytelling magic, and Taylor’s performances breathe new life into these beloved tracks.</p> <!-- HANAP DUN NG DESCRIPTION SA INTERNET SAME SA UNA KONG SINABI SAKTO LNG WAG MAHABA  -->
+            <br>
+            <p>The Eras Tour promises an awe-inspiring spectacle, complete with breathtaking visuals, intricate choreography, and a set design that perfectly captures the essence of every album. Taylor’s unparalleled ability to connect with her audience creates an intimate atmosphere, even in sold-out stadiums. Whether she’s sharing heartfelt anecdotes or delivering powerhouse vocals, she makes every fan feel like they’re part of something extraordinary.</p> <!-- HANAP DUN NG DESCRIPTION SA INTERNET SAME SA UNA KONG SINABI SAKTO LNG WAG MAHABA  -->
+            <br>
+            <p>This isn’t just a concert—it’s a celebration of a legacy that has shaped pop culture and touched millions. Whether you’ve been a Swiftie since day one or are falling in love with her music for the first time, Taylor’s energy, artistry, and passion will leave you spellbound. Don’t miss your chance to experience this once-in-a-lifetime event—grab your tickets and prepare for an unforgettable night of music and memories!!</p> <!-- HANAP DUN NG DESCRIPTION SA INTERNET SAME SA UNA KONG SINABI SAKTO LNG WAG MAHABA  -->
+        </div>
+
+        <!-- Featured Artists Section -->
+        <div class="featured-artists">
+            <h2>Featured Artists</h2>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTabContent(0)">Artist 1</button>
+                <button class="tab-button" onclick="showTabContent(1)">Artist 2</button>
+                <button class="tab-button" onclick="showTabContent(2)">Artist 3</button>
+            </div>
+
+            <div class="tab-content active" id="tab-0">
+                <div class="artist-card">
+                    <img src="Image/taylor4.jpg" alt="Artist 1" class="artist-image"> <!-- NEED IBAHIN YUNG PIC NG ARTIST DEPENDE DUN SA NAPILI NYONG ARTIST FOR EXAMPLE SI DUA LIPA EDI PIC NI DUA LIPA ILAGAY NYO -->
+                    <div class="artist-info">
+                        <h3>Taylor Swift</h3> <!-- NAME NG ARTIST  -->
+                        <p class="artist-description">Taylor Swift is one of the most iconic artists of our time. A 12-time Grammy winner, she has sold over 200 million albums and delivered hits like "Shake It Off" and "All Too Well." With *Midnights* and her re-recorded classics, she continues to redefine music and inspire a generation.</p> <!-- SHORT BACKGROUND DESCRIPTION ABOUT DUN SA ARTIST  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-1">
+                <div class="artist-card">
+                    <img src="Image/ed sheeran.jpg" alt="Artist 2" class="artist-image"> <!-- DTO NAMAN KUNG MAY ADDITIONAL NA KASAMA PA SYA DUN SA GAGANAPIN NA CONCERT  -->
+                    <div class="artist-info">
+                        <h3>Ed Sheeran</h3> <!-- NAME NG ARTIST  -->
+                        <p class="artist-description">Ed Sheeran is one of the most influential artists of his generation. A four-time Grammy winner, he has sold over 150 million records worldwide with hits like "Shape of You" and "Thinking Out Loud." With his latest album *Subtract* and timeless classics, he continues to captivate audiences and shape the music industry.</p> <!-- SHORT BACKGROUND DESCRIPTION ABOUT DUN SA ARTIST  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-2">
+                <div class="artist-card">
+                    <img src="Image/Selena Gomez.jpeg" alt="Artist 3" class="artist-image"> <!-- DTO NAMAN KUNG MAY ADDITIONAL NA KASAMA PA SYA DUN SA GAGANAPIN NA CONCERT  -->
+                    <div class="artist-info">
+                        <h3>Selena Gomez</h3>  <!-- NAME NG ARTIST  -->
+                        <p class="artist-description">Selena Gomez is a global superstar and one of pop music's most beloved voices. A multi-platinum artist and Emmy-nominated producer, she has delivered hits like "Lose You to Love Me" and "Rare." With her latest music and empowering projects, Selena continues to inspire fans and leave her mark on the entertainment world.</p> <!-- SHORT BACKGROUND DESCRIPTION ABOUT DUN SA ARTIST  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- Showcase and Discography Section -->
+    <div class="showcase-and-discography">
+        <div class="video-container">
+            <h2>Artist Showcase</h2>
+            <video controls>
+                <source src="Video/You belong with me.mp4" type="video/mp4"> <!-- OPTIONAL LNG TO!! - IF KAYA NYO LNG DOWNLOAD KAYO NG VID SA YOUTUBE OR KAHIT SAANG PLATFORMS TAS ILAGAY NYO DTO  -->
+            </video>
+        </div>    
+            
+            <div class="discography-container">
+                <h2>Artist Discography</h2>
+                
+                <!-- First Album Container -->
+                <div class="album-display">
+                    <img src="Image/album.jpeg" class="album-image"> <!-- NEED ITO PALITAN DEPENDE DUN SA ALBUM NUNG ARTIST  -->
+                    <h4 class="album-name">LOVER</h4> <!-- NAME NG ALBUM  -->
+                    <p class="release-date">Release Date: August 23, 2019</p> <!-- WHAT DATE NILABAS YUNG ALBUM  -->
+                </div>
+                
+                <div class="gap"></div> 
+        
+                <!-- Second Album Container -->
+                <div class="album-display">
+                    <img src="Image/Folklore.jpeg" class="album-image">  <!-- NEED ITO PALITAN DEPENDE DUN SA ALBUM NUNG ARTIST  -->
+                    <h4 class="album-name">FOLKLORE</h4> <!-- NAME NG ALBUM  -->
+                    <p class="release-date">Release Date: July 24, 2020</p> <!-- WHAT DATE NILABAS YUNG ALBUM  -->
+                </div>
+        </div>
+    </div>  
+        
+    <div class="event-wrapper">          
+        <section class="ticket-section">
+            <h2>Seat Plan</h2>
+            <div class="ticket-container">
+                <div class="ticket-map">
+                    <img src="Image/seating.jpeg" alt="Seating Chart">
+                </div>
+                <div class="ticket-info">
+                    <h3>Ticket Pricing</h3>
+                    <div class="ticket-pricing">
+                        <li>VIP - ₱ 10,500.00</li>
+                        <li>Patron B - ₱ 8,500.00</li>
+                        <li>Patron C - ₱ 6,500.00</li>
+                        <li>Patron D - ₱ 4,500.00</li>
+                        <li>Lower Box - ₱ 2,500.00</li>
+                        <li>Upper Box - ₱ 1,500.00</li>
+                    </div> 
+        
+                    <div class="ticket-links">
+                        <button class="ticket-button">Schedules</button>
+                        <a href="Check-Out.html" class="ticket-button">BUY TICKETS</a>
+                    </div> 
+                </div>
+            </div>
+        </section> 
+        
+        <section class="event-location">
+            <h2>Event Location</h2>
+            <img src="Image/loc.jpeg" alt="Event Location">
+            <h3>Hard Rock Stadium</h3> <!-- ILAGAY KUNG SAAN GAGANAPIN YUNG CONCERT NOTE KUNG PHILIPPINE ARENA NA WAG NYO NA TONG PALITAN --> 
+            <p><strong>LOCATION :</strong>  Miami Gardens, Florida, United States. </p> <!-- SAAN YUNG LOCATION  NOTE KUNG PHILIPPINE ARENA NA WAG NYO NA TONG PALITAN  -->
+            <p><strong>CAPACITY :</strong> Approximately 65,000 (expandable to 70,000 for special events)</p> <!-- CAPACITY NUNG VENUE NOTE KUNG PHILIPPINE ARENA NA WAG NYO NA TONG PALITAN  -->
+        </section>
+    </div> 
+
+    <!-- YAN NA MUNA SALAMAT SA PAGTULONG!!! --> 
+
+
+<script>
+    
+    function showTabContent(index) {
+        const tabs = document.querySelectorAll('.tab-content');
+        const buttons = document.querySelectorAll('.tab-button');
+    
+        tabs.forEach((tab, i) => {
+        tab.classList.remove('active'); 
+        buttons[i].classList.remove('active'); 
+        });
+    
+            tabs[index].classList.add('active');
+            buttons[index].classList.add('active'); 
+        }
+</script>
+ 
+<script>
+    let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+        }
+</script> 
+    
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+                
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+
+            slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; } 
+                for (let j = 0; j < dots.length; j++) {
+                    dots[j].className = dots[j].className.replace(" active", ""); 
+                }
+
+                slides[slideIndex - 1].style.display = "block"; 
+                dots[slideIndex - 1].className += " active"; 
+                setTimeout(showSlides, 7000); 
+            }
+</script> 
+         
+</body>
+</html>
